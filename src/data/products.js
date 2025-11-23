@@ -7,6 +7,77 @@ const PRODUCTS = [
     stock: 3,
     img: "/assets/images/item1.jpg"
   },
+
+{
+  id: 3,
+  name : "Red Hearts",
+  category: "Keychains",
+  price: 199,
+  img: "/assets/images/item3.jpg",
+  stock: 10
+},
+
+{
+  id: 4,
+  name : "Pink Hat",
+  category: "Keychains",
+  price: 199,
+  img: "/assets/images/item4.jpg",
+  stock: 10
+},
+
+{
+  id: 6,
+  name : "Red Hearts",
+  category: "Keychains",
+  price: 199,
+  img: "/assets/images/item6.jpg",
+  stock: 10
+},
+{
+  id: 8,
+  name : "Red Hearts",
+  category: "Keychains",
+  price: 199,
+  img: "/assets/images/item8.jpg",
+  stock: 10
+},
+
+{
+  id: 10,
+  name : " Ten",
+  category: "Keychains",
+  price: 199,
+  img: "/assets/images/item10.jpg",
+  stock: 10
+},
+
+{
+  id: 11,
+  name : " Ten",
+  category: "Keychains",
+  price: 199,
+  img: "/assets/images/item11.jpg",
+  stock: 10
+},
+
+{
+  id: 12,
+  name : " Ten",
+  category: "Keychains",
+  price: 199,
+  img: "/assets/images/item12.jpg",
+  stock: 10
+},
+
+
+
+
+
+
+
+
+
   {
     id: 2,
     name: "Carrot Plush Toy",

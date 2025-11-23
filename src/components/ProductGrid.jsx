@@ -1,19 +1,18 @@
-import React, { useState } from 'react';
-import ProductCard from './ProductCard';
-import PRODUCTS from '../data/products';
+import React from "react";
+import PRODUCTS from "../data/products.js";
+import ProductCard from "./ProductCard";
 
-export default function ProductGrid({ onSelect }) {
+
+export default function ProductGrid() {
   return (
-    <section className="grid-section px-4 sm:px-8">
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
-        {PRODUCTS.map(p => (
-          <button key={p.id} className="card" onClick={() => onSelect(p)}>
-            <img src={p.img} alt={p.name} className="w-full h-56 object-cover rounded-2xl" />
-            <div className="py-3 px-2">
-              <h3 className="text-[#4A4A4A] font-semibold">{p.name}</h3>
-              <p className="text-[#FF6D95] font-bold">₹{p.price}</p>
-            </div>
-          </button>
+    <section className="w-full px-6 md:px-10 lg:px-16 py-12">
+      <h2 className="text-2xl md:text-3xl font-bold text-[#6E3C51] mb-8 text-center">
+        Our Collection
+      </h2>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 md:gap-7">
+        {PRODUCTS.map((product) => (
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </section>
